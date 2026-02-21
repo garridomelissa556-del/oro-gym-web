@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OroGym – Machala, Ecuador</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<div class="sticky-cta">
+  <a href="https://wa.me/593983771290" class="sticky-wa" target="_blank" title="WhatsApp">💬</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <img src="logo.jpg" alt="OroGym Logo">
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#planes">Planes</a>
+    <a href="#sucursales">Sucursales</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <img class="hero-logo" src="logo.jpg" alt="OroGym">
+  <h1>ORO<br>GYM</h1>
+  <p class="hero-subtitle">Machala · Ecuador</p>
+  <p class="hero-slogan">Querer es <span>Poder</span></p>
+  <a href="#planes" class="btn-primary">Ver Planes</a>
+  <div class="scroll-arrow-only"></div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="section-label">Lo que ofrecemos</div>
+  <div class="section-title">Nuestros<br>Servicios</div>
+  <div class="services-grid">
+    <div class="service-card fade-in">
+      <span class="service-icon">🏋️</span>
+      <h3>Gym Completo</h3>
+      <p>Equipos de última generación para tu entrenamiento.</p>
+    </div>
+    <div class="service-card fade-in">
+      <span class="service-icon">⚡</span>
+      <h3>CrossFit</h3>
+      <p>Entrenamientos de alta intensidad para máximos resultados.</p>
+    </div>
+    <div class="service-card fade-in">
+      <span class="service-icon">💃</span>
+      <h3>Bailoterapia</h3>
+      <p>Quema calorías y diviértete con música y movimiento.</p>
+    </div>
+    <div class="service-card fade-in">
+      <span class="service-icon">🧑‍💼</span>
+      <h3>Entrenador Personal</h3>
+      <p>Entrenadores certificados que guían tu progreso.</p>
+    </div>
+    <div class="service-card fade-in">
+      <span class="service-icon">📶</span>
+      <h3>WiFi Gratis</h3>
+      <p>Conexión gratuita para tu música y entretenimiento.</p>
+    </div>
+    <div class="service-card fade-in">
+      <span class="service-icon">🚿</span>
+      <h3>Vestuarios</h3>
+      <p>Espacios cómodos y limpios para que te cambies.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PLANES -->
+<div class="plans-section" id="planes">
+  <section>
+    <div class="section-label">Membresías</div>
+    <div class="section-title">Nuestros<br>Planes</div>
+
+    <div class="plans-toggle">
+      <button class="toggle-btn active" onclick="showPlans('estudiante')">Estudiante</button>
+      <button class="toggle-btn" onclick="showPlans('adulto')">Adulto</button>
+    </div>
+
+    <!-- PLANES ESTUDIANTE -->
+    <div id="planes-estudiante" class="plans-grid">
+      <div class="plan-card fade-in">
+        <div class="plan-name">Diario</div>
+        <div class="plan-desc">Acceso por 1 día</div>
+        <div class="plan-price-note">$1<span class="plan-unit">.50</span></div>
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20el%20plan%20diario%20estudiante" class="plan-cta" target="_blank">Inscribirme</a>
+      </div>
+      <div class="plan-card featured fade-in">
+        <div class="plan-name">Quincenal</div>
+        <div class="plan-desc">15 días de acceso</div>
+        <div class="plan-price-note">$12<span class="plan-unit">.00</span></div>
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20el%20plan%20quincenal%20estudiante" class="plan-cta" target="_blank">Inscribirme</a>
+      </div>
+      <div class="plan-card fade-in">
+        <div class="plan-name">Mensual</div>
+        <div class="plan-desc">30 días completos</div>
+        <div class="plan-price-note">$20<span class="plan-unit">.00</span></div>
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20el%20plan%20mensual%20estudiante" class="plan-cta" target="_blank">Inscribirme</a>
+      </div>
+      <div class="plan-card fade-in">
+        <div class="plan-name">Trimestral</div>
+        <div class="plan-desc">3 meses · Mejor precio</div>
+        <div class="plan-price-note">$52<span class="plan-unit">.00</span></div>
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20el%20plan%20trimestral%20estudiante" class="plan-cta" target="_blank">Inscribirme</a>
+      </div>
+    </div>
+
+    <!-- PLANES ADULTO -->
+    <div id="planes-adulto" class="plans-grid plan-hidden">
+      <div class="plan-card fade-in">
+        <div class="plan-name">Diario</div>
+        <div class="plan-desc">Acceso por 1 día</div>
+        <div class="plan-price-note">$2<span class="plan-unit">.00</span></div>
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20el%20plan%20diario%20adulto" class="plan-cta" target="_blank">Inscribirme</a>
+      </div>
+      <div class="plan-card featured fade-in">
+        <div class="plan-name">Quincenal</div>
+        <div class="plan-desc">15 días de acceso</div>
+        <div class="plan-price-note">$16<span class="plan-unit">.00</span></div>
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20el%20plan%20quincenal%20adulto" class="plan-cta" target="_blank">Inscribirme</a>
+      </div>
+      <div class="plan-card fade-in">
+        <div class="plan-name">Mensual</div>
+        <div class="plan-desc">30 días completos</div>
+        <div class="plan-price-note">$25<span class="plan-unit">.00</span></div>
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20el%20plan%20mensual%20adulto" class="plan-cta" target="_blank">Inscribirme</a>
+      </div>
+      <div class="plan-card fade-in">
+        <div class="plan-name">Trimestral</div>
+        <div class="plan-desc">3 meses · Mejor precio</div>
+        <div class="plan-price-note">$65<span class="plan-unit">.00</span></div>
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20el%20plan%20trimestral%20adulto" class="plan-cta" target="_blank">Inscribirme</a>
+      </div>
+    </div>
+
+    <p class="plans-note">💬 Escríbenos por WhatsApp para conocer precios actualizados</p>
+  </section>
+</div>
+
+<div class="divider"></div>
+
+<!-- SUCURSALES -->
+<section id="sucursales">
+  <div class="section-label">Encuéntranos</div>
+  <div class="section-title">Nuestras<br>Sucursales</div>
+  <div class="branches">
+    <div class="branch-card fade-in">
+      <div class="branch-img" style="background-image:url('https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=600&q=80')"></div>
+      <div class="branch-body">
+        <div class="branch-number">1</div>
+        <div class="branch-info">
+          <h3>OroGym 1</h3>
+          <p>📍 Av. Ferroviaria y Callejón Italia<br>Machala, El Oro, Ecuador</p>
+          <a href="https://maps.google.com/?q=Av.+Ferroviaria+y+Callejón+Italia,+Machala,+Ecuador" target="_blank" class="branch-map-btn">🗺 Ver en Mapa</a>
+        </div>
+      </div>
+    </div>
+    <div class="branch-card fade-in">
+      <div class="branch-img" style="background-image:url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&q=80')"></div>
+      <div class="branch-body">
+        <div class="branch-number">2</div>
+        <div class="branch-info">
+          <h3>OroGym 2</h3>
+          <p>📍 Av. Manuel Estomba y Colón Tinoco<br>Machala, El Oro, Ecuador</p>
+          <a href="https://maps.google.com/?q=Av.+Manuel+Estomba+y+Colón+Tinoco,+Machala,+Ecuador" target="_blank" class="branch-map-btn">🗺 Ver en Mapa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="section-label">Nuestro ambiente</div>
+  <div class="section-title">Galería</div>
+  <div class="gallery-grid">
+    <div class="gallery-item fade-in" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80')">
+      <div class="gallery-overlay"><span>Área de pesas</span></div>
+    </div>
+    <div class="gallery-item fade-in" style="background-image:url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80')">
+      <div class="gallery-overlay"><span>Cardio</span></div>
+    </div>
+    <div class="gallery-item fade-in" style="background-image:url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80')">
+      <div class="gallery-overlay"><span>CrossFit</span></div>
+    </div>
+    <div class="gallery-item fade-in" style="background-image:url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80')">
+      <div class="gallery-overlay"><span>Bailoterapia</span></div>
+    </div>
+    <div class="gallery-item fade-in tall" style="background-image:url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80')">
+      <div class="gallery-overlay"><span>Entrenamiento</span></div>
+    </div>
+    <div class="gallery-item fade-in" style="background-image:url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80')">
+      <div class="gallery-overlay"><span>Máquinas</span></div>
+    </div>
+  </div>
+  <div class="gallery-insta fade-in">
+    <span>Síguenos en Instagram para más contenido</span>
+    <a href="https://www.instagram.com/oro_gym.ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="insta-btn">
+      📸 @oro_gym.ec
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HORARIOS -->
+<section id="horarios">
+  <div class="section-label">Estamos esperándote</div>
+  <div class="section-title">Horarios</div>
+  <div class="schedule-grid fade-in">
+    <div class="schedule-card main-day">
+      <div class="schedule-days">Lunes — Viernes</div>
+      <div class="schedule-time">5:00 <span>AM</span></div>
+      <div class="schedule-sep">—</div>
+      <div class="schedule-time">10:00 <span>PM</span></div>
+      <div class="schedule-badge">17 horas abiertas</div>
+    </div>
+    <div class="schedule-card">
+      <div class="schedule-days">Sábados</div>
+      <div class="schedule-time">5:00 <span>AM</span></div>
+      <div class="schedule-sep">—</div>
+      <div class="schedule-time">2:00 <span>PM</span></div>
+      <div class="schedule-badge">9 horas abiertas</div>
+    </div>
+    <div class="schedule-card closed-card">
+      <div class="schedule-days">Domingos</div>
+      <div class="schedule-closed">Cerrado</div>
+      <div class="schedule-badge closed-badge">Día de descanso</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-label">Comunícate con nosotros</div>
+  <div class="section-title">Contacto</div>
+  <div class="contact-pro fade-in">
+
+    <div class="contact-col phone-col">
+      <div class="contact-icon-wrap">📞</div>
+      <div class="contact-col-label">Llámanos</div>
+      <a href="tel:0983771290" class="contact-phone-pro">0983 771 290</a>
+      <span class="contact-tag">Lun–Vie 5AM–10PM · Sáb 5AM–2PM</span>
+    </div>
+
+    <div class="contact-divider-v"></div>
+
+    <div class="contact-col social-col">
+      <div class="contact-icon-wrap">💬</div>
+      <div class="contact-col-label">Síguenos y escríbenos</div>
+      <div class="contact-social-btns">
+        <a href="https://wa.me/593983771290?text=Hola,%20quiero%20información%20sobre%20OroGym" target="_blank" class="csb-btn csb-wa">
+          <span class="csb-icon">✉</span>
+          <span class="csb-text">
+            <span class="csb-name">WhatsApp</span>
+            <span class="csb-sub">Respuesta inmediata</span>
+          </span>
+        </a>
+        <a href="https://www.instagram.com/oro_gym.ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="csb-btn csb-ig">
+          <span class="csb-icon">📸</span>
+          <span class="csb-text">
+            <span class="csb-name">Instagram</span>
+            <span class="csb-sub">@oro_gym.ec</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <strong>ORO GYM</strong> · Machala, Ecuador
+  <span class="footer-slogan">Querer es Poder ⚡</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
